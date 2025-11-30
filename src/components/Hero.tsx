@@ -1,53 +1,54 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { FaArrowRight } from 'react-icons/fa';
+import Image from 'next/image';
+import { FaGithub, FaEnvelope, FaLinkedin, FaGraduationCap } from 'react-icons/fa';
 
 export default function Hero() {
     return (
-        <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
-            {/* Background Elements */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(0,240,255,0.1),transparent_50%)]" />
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[100px]" />
-            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-600/20 rounded-full blur-[100px]" />
+        <section className="py-20 border-b border-gray-100 dark:border-gray-800">
+            <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-10">
+                {/* Profile Image Placeholder - User can replace this later */}
+                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gray-200 dark:bg-gray-800 flex-shrink-0 overflow-hidden relative">
+                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-xs">
+                        Profile Photo
+                    </div>
+                </div>
 
-            <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-cyan-400 text-sm font-medium mb-6">
-                        AI & Robotics Researcher
-                    </span>
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-                        Building the <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-                            Future of VLA
-                        </span>
+                <div className="flex-1 text-center md:text-left">
+                    <h1 className="text-3xl md:text-4xl font-bold mb-2 text-gray-900 dark:text-white">
+                        Minu <span className="text-gray-400 font-normal">(Minuum)</span>
                     </h1>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-                        Exploring the intersection of Vision-Language Models and Action.
-                        Developing intelligent agents that perceive, reason, and act in the physical world.
+                    <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
+                        Undergraduate Researcher @ University
                     </p>
 
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-                        <Link
-                            href="/projects"
-                            className="group px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-cyan-400 transition-colors flex items-center gap-2"
-                        >
-                            View Projects
-                            <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-                        </Link>
-                        <Link
-                            href="/blog"
-                            className="px-8 py-3 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 transition-colors"
-                        >
-                            Read Blog
-                        </Link>
+                    <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-6">
+                        <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-sm rounded-full font-medium">
+                            Robotics
+                        </span>
+                        <span className="px-3 py-1 bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-300 text-sm rounded-full font-medium">
+                            Vision-Language-Action (VLA)
+                        </span>
+                        <span className="px-3 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-300 text-sm rounded-full font-medium">
+                            Embodied AI
+                        </span>
                     </div>
-                </motion.div>
+
+                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mb-6">
+                        I am a senior undergraduate student interested in the intersection of Computer Vision and Robotics.
+                        My current research focuses on efficient adaptation of VLA models for mobile manipulators.
+                    </p>
+
+                    <div className="flex items-center justify-center md:justify-start gap-5 text-gray-500">
+                        <a href="https://github.com/minuum" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white transition-colors">
+                            <FaGithub size={22} />
+                        </a>
+                        <a href="mailto:your.email@example.com" className="hover:text-gray-900 dark:hover:text-white transition-colors">
+                            <FaEnvelope size={22} />
+                        </a>
+                        {/* Add Google Scholar or LinkedIn here */}
+                    </div>
+                </div>
             </div>
         </section>
     );

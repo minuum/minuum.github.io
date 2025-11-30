@@ -8,18 +8,13 @@ export default async function ProjectsPage() {
         <main className="min-h-screen pt-24 px-6 pb-20">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
-                            Open Source
-                        </span> Projects
-                    </h1>
-                    <p className="text-gray-400 max-w-2xl">
-                        A collection of my work in AI, Robotics, and VLA research.
-                        Explore the code on GitHub.
+                    <h1 className="text-3xl font-bold mb-4">Projects</h1>
+                    <p className="text-gray-600 dark:text-gray-400 max-w-2xl">
+                        Open source contributions and research code.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="space-y-2">
                     {repos.map((repo, index) => (
                         <ProjectCard key={repo.id} repo={repo} index={index} />
                     ))}
