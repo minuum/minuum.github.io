@@ -21,10 +21,11 @@ export default function AboutPage() {
                     <div className="space-y-6">
                         <div>
                             <div className="flex justify-between items-baseline mb-1">
-                                <h3 className="font-semibold text-lg">University Name</h3>
-                                <span className="text-sm text-gray-500">2020 - Present</span>
+                                <h3 className="font-semibold text-lg">Kangnam University</h3>
+                                <span className="text-sm text-gray-500">Mar. 2022 - Present</span>
                             </div>
-                            <p className="text-gray-600 dark:text-gray-400">B.S. in Computer Science</p>
+                            <p className="text-gray-600 dark:text-gray-400">B.S. in Artificial Intelligence</p>
+                            <p className="text-sm text-gray-500 mt-1">GPA: 4.3 / 4.5</p>
                         </div>
                     </div>
                 </section>
