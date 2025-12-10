@@ -40,7 +40,7 @@ export default function Home() {
               </h2>
               <ul className="space-y-4">
                 <li>
-                  <Link href="/projects" className="group block">
+                  <Link href="/blog/mobile-vla-research" className="group block">
                     <h3 className="font-medium text-lg group-hover:text-primary transition-colors inline-flex items-center gap-2">
                       RoboVLMs Context Analysis
                       <FaArrowRight className="opacity-0 -ml-2 group-hover:opacity-100 group-hover:ml-0 transition-all text-sm" />
@@ -72,6 +72,11 @@ export default function Home() {
                 Recent Posts
               </h3>
               <ul className="space-y-3">
+                <li>
+                  <Link href="/blog/mobile-vla-research" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors block">
+                    Research: Mobile-VLA Context Adaptation
+                  </Link>
+                </li>
                 <li>
                   <Link href="/blog/future-of-vla" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors block">
                     The Future of VLA Models
