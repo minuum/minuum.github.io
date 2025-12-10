@@ -8,10 +8,13 @@ export default function Hero() {
         <section className="py-20 border-b border-gray-100 dark:border-gray-800">
             <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-10">
                 {/* Profile Image Placeholder - User can replace this later */}
-                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gray-200 dark:bg-gray-800 flex-shrink-0 overflow-hidden relative">
-                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-xs">
-                        Profile Photo
-                    </div>
+                <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gray-200 dark:bg-gray-800 flex-shrink-0 overflow-hidden relative border-4 border-white dark:border-gray-900 shadow-lg">
+                    <Image
+                        src="/images/profile.jpeg"
+                        alt="Profile Photo"
+                        fill
+                        className="object-cover"
+                    />
                 </div>
 
                 <div className="flex-1 text-center md:text-left">
