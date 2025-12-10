@@ -19,7 +19,7 @@ export default function Hero() {
 
                 <div className="flex-1 text-center md:text-left">
                     <h1 className="text-3xl md:text-4xl font-bold mb-2 text-gray-900 dark:text-white">
-                        Minu <span className="text-gray-400 font-normal">(Minuum)</span>
+                        Minu Lee <span className="text-gray-400 font-normal">(Minuum)</span>
                     </h1>
                     <p className="text-lg text-gray-600 dark:text-gray-300 mb-4">
                         Undergraduate Researcher @ Kangnam University

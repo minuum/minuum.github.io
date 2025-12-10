@@ -8,7 +8,7 @@ export default function AboutPage() {
 
                 <div className="prose prose-gray dark:prose-invert max-w-none mb-12">
                     <p>
-                        I am a senior undergraduate student majoring in Computer Science and Robotics.
+                        I am a senior undergraduate student majoring in <strong>Artificial Intelligence</strong> at Kangnam University.
                         My research interests lie at the intersection of <strong>Computer Vision</strong> and <strong>Robotics</strong>,
                         specifically focusing on Vision-Language-Action (VLA) models and their application in mobile manipulation tasks.
                     </p>
@@ -22,10 +22,10 @@ export default function AboutPage() {
                         <div>
                             <div className="flex justify-between items-baseline mb-1">
                                 <h3 className="font-semibold text-lg">Kangnam University</h3>
-                                <span className="text-sm text-gray-500">Mar. 2022 - Present</span>
+                                <span className="text-sm text-gray-500">Mar. 2020 - Present</span>
                             </div>
                             <p className="text-gray-600 dark:text-gray-400">B.S. in Artificial Intelligence</p>
-                            <p className="text-sm text-gray-500 mt-1">GPA: 4.3 / 4.5</p>
+                            <p className="text-sm text-gray-500 mt-1">GPA: 4.28 / 4.5</p>
                         </div>
                     </div>
                 </section>
