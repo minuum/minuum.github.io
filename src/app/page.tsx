@@ -28,7 +28,7 @@ export default function Home() {
                 <span className="text-sm text-gray-400 font-mono whitespace-nowrap pt-1">Sep 2024</span>
                 <div>
                   <p className="text-gray-700 dark:text-gray-300">
-                    Joined the <strong>Robotics & AI Lab</strong> as an undergraduate researcher.
+                    Joined Prof. Inyeop Choe&apos;s research group as an undergraduate researcher.
                   </p>
                 </div>
               </div>

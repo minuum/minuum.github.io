@@ -46,7 +46,7 @@ export default function Hero() {
                         <a href="https://github.com/minuum" target="_blank" rel="noopener noreferrer" className="hover:text-gray-900 dark:hover:text-white transition-colors">
                             <FaGithub size={22} />
                         </a>
-                        <a href="mailto:minwoolo0357@gmail.com" className="hover:text-gray-900 dark:hover:text-white transition-colors">
+                        <a href="mailto:minwool0357@gmail.com" className="hover:text-gray-900 dark:hover:text-white transition-colors">
                             <FaEnvelope size={22} />
                         </a>
                     </div>

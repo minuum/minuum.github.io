@@ -1,4 +1,4 @@
-import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
+import { FaGraduationCap, FaBriefcase, FaBook } from 'react-icons/fa';
 
 export default function AboutPage() {
     return (
@@ -25,9 +25,31 @@ export default function AboutPage() {
                                 <span className="text-sm text-gray-500">Mar. 2020 - Present</span>
                             </div>
                             <p className="text-gray-600 dark:text-gray-400">B.S. in Artificial Intelligence</p>
-                            <p className="text-sm text-gray-500 mt-1">GPA: 4.28 / 4.5</p>
+                            <p className="text-sm text-gray-500 mt-1">GPA: 4.27 / 4.5</p>
                         </div>
                     </div>
+                </section>
+
+                <section className="mb-12">
+                    <h2 className="text-xl font-bold mb-6 flex items-center gap-2 border-b border-gray-100 dark:border-gray-800 pb-2">
+                        <FaBook className="text-primary" /> Publications
+                    </h2>
+                    <ul className="space-y-4">
+                        <li className="flex gap-4 items-start">
+                            <span className="text-sm font-mono text-gray-400 pt-1 shrink-0">2024</span>
+                            <div>
+                                <h3 className="font-medium text-gray-900 dark:text-gray-100">
+                                    Designing Conversational AI Services Using RAG-Based Loneliness Analysis for Koreans
+                                </h3>
+                                <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                                    Author(s): <b>Minwoo Lee</b> (2nd Author), et al.
+                                </p>
+                                <p className="text-xs text-blue-600 dark:text-blue-400 mt-1">
+                                    Journal of the Korea Convergence Society (JCCT), KCI Registered
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                 </section>
 
                 <section>
@@ -40,7 +62,7 @@ export default function AboutPage() {
                                 <h3 className="font-semibold text-lg">Undergraduate Researcher</h3>
                                 <span className="text-sm text-gray-500">Sep 2024 - Present</span>
                             </div>
-                            <p className="text-primary text-sm mb-2">Robotics & AI Lab</p>
+                            <p className="text-primary text-sm mb-2">Advised by Prof. Inyeop Choe</p>
                             <ul className="list-disc list-inside text-gray-600 dark:text-gray-400 space-y-1 text-sm">
                                 <li>Conducting research on adapting VLA models for 2DOF mobile robots.</li>
                                 <li>Developing efficient context vector extraction methods.</li>
