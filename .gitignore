@@ -24,6 +24,10 @@
 .DS_Store
 *.pem
 
+# personal certificates at root (re-downloadable)
+성적증명서_*.pdf
+재학증명서_*.pdf
+
 # debug
 npm-debug.log*
 yarn-debug.log*
