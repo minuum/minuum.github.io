@@ -7,10 +7,10 @@ description: >-
 # Portfolio Document Synchronizer (포트폴리오 문서 동기화 스킬)
 
 ## Overview
-이 스킬은 **대학원 컨택 종합 마스터 문서**([대ᄒาᆨ원 컨택 종ᄒาᆸ 마스터 문서](file:///Users/minu/dev/portfolio/대ᄒาᆨ원 컨택 종ᄒาᆸ 마스터 문서 (2026년 6월 9일 기준).md))를 단일 진실 공급원(Single Source of Truth)으로 삼아, 아래 하위 프로필 문서들이 항상 동일한 팩트와 최신 수치를 유지하도록 동기화 작업을 수행합니다.
+이 스킬은 **대학원 컨택 종합 마스터 문서**([대ᄒาᆨ원 컨택 종ᄒาᆸ 마스터 문서](file:///Users/minu/dev/portfolio/대ᄒาᆨ원 컨택 종ᄒาᆸ 마스터 문서 (2026년 6월 9일 기준).md))를 단일 진실 공급원(Single Source of Truth)으로 삼아, 아래 하위 프로필 문서들이 항상 동일한 팩트와 최신 수치를 유지하도록 동기화 작업을 수행합니다.
 
 ### 동기화 대상 문서 목록
-1. **기준 문서 (마스터):** [대ᄒาᆨ원 컨택 종ᄒาᆸ 마스터 문서 (2026년 6월 9일 기준).md](file:///Users/minu/dev/portfolio/대ᄒาᆨ원 컨택 종ᄒาᆸ 마스터 문서 (2026년 6월 9일 기준).md)
+1. **기준 문서 (마스터):** [대ᄒาᆨ원 컨택 종ᄒาᆸ 마스터 문서 (2026년 6월 9일 기준).md](file:///Users/minu/dev/portfolio/대ᄒาᆨ원 컨택 종ᄒาᆸ 마스터 문서 (2026년 6월 9일 기준).md)
 2. **영문 이력서:** [CV_MinwooLee.md](file:///Users/minu/dev/portfolio/CV_MinwooLee.md)
 3. **자소서 및 메일:** [cold_email_draft_kor.md](file:///Users/minu/dev/portfolio/cold_email_draft_kor.md)
 4. **일정 및 계획:** [action_plan_june_2026.md](file:///Users/minu/dev/portfolio/action_plan_june_2026.md)

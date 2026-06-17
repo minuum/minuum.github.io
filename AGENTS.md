@@ -37,7 +37,7 @@ Raw data per lab: `/Users/minu/dev/scholar-lab-radar/labs/<slug>/`.
 | A | 이정범 (Jungbeom Lee) | 고려대 VAIL | 0.750 | jungbeom-lee |
 | A | 김현진 (H. Jin Kim) | 서울대 LARR | 0.736 | h-jin-kim |
 | A | 문형필 (Hyungpil Moon) | 성균관 RISE | 0.483 | hyungpil-moon |
-| A | 김균암 (Kyunam Kim) | 성균관 AMRL | 0.286 | kyunnam-kim |
+| A | 김규남 (Kyunam Kim) | 성균관 AMRL | 0.286 | kyunnam-kim |
 | B | 송재복 (Jae-Bok Song) | 고려대 IRL | 0.649 | jaebok-song |
 | B | 이윤상 (Yoonsang Lee) | 한양 CGR | 0.630 | yunsang-lee |
 | B | 김기훈 (Keehoon Kim) | POSTECH MARCH | 0.280 | keehoon-kim |
