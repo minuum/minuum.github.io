@@ -43,7 +43,7 @@ Portfolio: [minuum-portfolio](https://minuum.notion.site/minuum-portfolio) | Res
 
 ## RESEARCH EXPERIENCES
 **Undergraduate Research Assistant** — Advised by Prof. Inyeop Choe, Kangnam University  
-*Project: MoNaVLA (Mobile Navigation Vision-Language-Action Models)* | *Sep. 2025 – Present*  
+*Project: On-Device Vision-Language-Action Models for Mobile Robotics* | *Sep. 2025 – Present*  
 - **Diagnosis & Analysis:** Diagnosed structural text-attention collapse in the Kosmos-2 VLA backbone through per-layer attention measurement and frozen linear probe classification (val_acc: 96.6%), revealing that post-training had silently destroyed the text pathway regardless of downstream fine-tuning.
 - **Insight Validation:** Confirmed that visual grounding drives navigation decisions via a target object masking ablation that induced 100% action reversal.
 - **Architecture Design:** Designed a two-stage decomposition pipeline integrating PaliGemma2 as a zero-shot visual grounder with the Kosmos-2 vision encoder, bounding box history, and L2 normalization.
