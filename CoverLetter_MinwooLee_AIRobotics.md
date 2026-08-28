@@ -1,4 +1,4 @@
-# 자기소개서 — 이민우 (서강대학교 AI Robotics 연구실 지원)
+# 자기소개서 — 이민우
 
 ## 1. 인적 사항 및 지원 정보
 - **이름:** 이민우 (Minwoo Lee)
@@ -17,9 +17,9 @@
 
 ## 3. 연구 및 프로젝트 경험
 
-**MoNaVLA 프로젝트 (2025.01 ~ 현재)**
+**MoNaVLA 프로젝트 (2025.09 ~ 현재)**
 
-VLA 백본의 텍스트 경로 의존성 저하 문제를 per-layer attention 측정과 frozen linear probe(val_acc 96.6%) 분석으로 진단하고, 목표 물체 masking 시 행동 예측이 반전되는 현상을 ablation으로 연구하였습니다. 이를 바탕으로 PaliGemma2를 zero-shot visual grounder로 활용하여 목표 물체의 위치 정보를 실시간으로 추출하고, CLIP + BBox + L2-norm 기반 Decomposition 구조에 통합하여 closed-loop 주행 성공률 96.6%(FPE 0.102m)를 기록하였습니다. MLP policy를 68.4% → 75.9% → 77.0%로 단계적으로 개선하였으며, 해당 연구로 2026-1 강남대학교 캡스톤디자인 경진대회 은상을 받았습니다.
+VLA 백본의 텍스트 경로 의존성 저하 문제를 per-layer attention 측정과 frozen linear probe(val_acc 96.6%) 분석으로 진단하고, 목표 물체 masking 시 행동 예측이 반전되는 현상을 ablation으로 연구하였습니다. 이를 바탕으로 PaliGemma2를 zero-shot visual grounder로 활용하여 목표 물체의 위치 정보를 실시간으로 추출하고, CLIP + BBox + L2-norm 기반 Decomposition 구조에 통합하여 closed-loop 주행 성공률을 Simple MLP 10.3% → Decomposition v1 66.7% → 최종 96.6%(FPE 0.094m)까지 끌어올렸습니다. 동일한 grounding 소스에서 파이프라인 개선만으로 9.4배의 성능 향상을 정량적으로 규명하였으며, 해당 연구로 2026-1 강남대학교 캡스톤디자인 경진대회 은상을 받았습니다.
 
 **실물 로봇 셋업 (Serbot 2 / Jetson Orin / ROS2)**
 
@@ -29,10 +29,6 @@ Serbot 2 플랫폼에 Jetson Orin Linux 환경을 구성하고 ROS2 드라이버
 
 - KCI 등재지(JCCT) 제2저자 게재 (RAG 기반 LLM 서비스), IPACT 2024 우수논문상
 - 2025 강남대·GDGoC 공동 주최 해커톤(강냉톤) 대상(공과대학장상)
-
-**영어 성적 관련**
-
-현재 공인 영어 성적(TOEIC/TEPS)이 없으며, 여름방학 중 취득을 준비하고 있습니다. UC Berkeley CS285(Deep RL) 강의를 자습하며 강화학습 기초를 공부하고 있습니다.
 
 ---
 

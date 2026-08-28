@@ -15,7 +15,7 @@
 ### 2. 연구실별 대표/최신 논문 초록 정독 및 분석
 - [x] **연세대 RLLAB:** TwinVLA (ICLR 2026) 분석 완료
 - [x] **고려대 ISR LAB:** 모바일 로봇 자율주행 및 내비게이션 논문 분석 완료
-- [x] **고려대 VAIL:** AxisGuide (RSS 2026), Failure-Resilient VLA (RSS 2025) 분석 완료
+- [x] **고려대 VAIL:** AxisGuide (RSS 2026), Towards Failure-Resilient Lifelong Learning Agents (AAMAS 2026) 분석 완료
 - [x] **서강대 AI Robotics:** 모바일 로봇 내비게이션 & 제어 논문 분석 완료
 - [ ] **기타 연구실:** 권민혜(성균관대), 우홍욱(성균관대), 이윤상(한양대), 유영재(서울대), 안혜민(POSTECH) 최신 논문 초록 1~2편 추가 분석.
 
@@ -44,8 +44,8 @@
 
 - [ ] **어학 약점 솔직 고백 및 보완 노력:** "현재 공인 어학 점수가 없으나, 7~8월 중 TOEIC 750점 이상 취득을 목표로 접수 및 공부를 병행하고 있음"을 명시.
 - [ ] **실질적 연구 구현 강점 극대화:** 
-  - CLIP + BBox + L2-aug 기반 Decomposition Architecture로 closed-loop 주행 성공률 96.6% 달성 (MoNaVLA)
-  - MLP policy 단계별 개선 (68.4% -> 75.9% -> 77.0%)
+  - CLIP + BBox + L2-aug 기반 Decomposition Architecture로 closed-loop 주행 성공률 96.6%(FPE 0.094m) 달성 (MoNaVLA)
+  - MLP policy 단계별 개선 (10.3% -> 66.7% -> 96.6%, 9.4배 향상)
   - Serbot 2 모바일 로봇 상에서 Linux/ROS2 세팅, 드라이버 통합 및 10Hz 비동기 제어/Jitter Hold 필터링 구현 경험 어필.
 - [ ] **교수님 연구 분야 매칭:** 각 연구실별 특성(모바일 내비게이션, 강건한 VLA, 실세계 제어 등)과 MoNaVLA 프로젝트의 연결 고리 서술.
 

@@ -74,7 +74,7 @@ MoNaVLA: https://minuum.github.io/MoNaVLA/
 > **Q. Anything else:**
 > 안녕하세요, 이영운 교수님. 강남대학교 AI전공 4학년 이민우입니다.
 >
-> 현재 최인엽 교수님 지도 하에 모바일 로봇 도메인에서 VLA 모델을 적용하는 MoNaVLA 프로젝트를 진행 중입니다. CLIP + BBox + L2-aug 기반 Decomposition Architecture를 구현하여 시뮬레이션 closed-loop 주행 성공률 96.6%를 기록하였으며(E2E 구조는 0%에서 수렴 실패), MLP policy를 68.4% → 75.9% → 77.0%로 단계적으로 개선하였습니다. 또한 텍스트 어텐션 붕괴 현상을 zero-shot probe와 masking ablation으로 진단하는 작업을 해보았습니다. 실물 구동을 위해서는 Serbot 2 플랫폼에 Jetson Orin Linux 환경과 ROS2 드라이버를 직접 구성하였고, 제어 지터 완화를 위해 10Hz 비동기 제어와 Jitter Hold 필터링을 적용해 보았습니다.
+> 현재 최인엽 교수님 지도 하에 모바일 로봇 도메인에서 VLA 모델을 적용하는 MoNaVLA 프로젝트를 진행 중입니다. CLIP + BBox + L2-aug 기반 Decomposition Architecture를 구현하여 시뮬레이션 closed-loop 주행 성공률을 Simple MLP 10.3% → Decomposition v1 66.7% → 최종 96.6%(FPE 0.094m)까지 끌어올렸습니다(동일 grounding 소스에서 파이프라인 개선만으로 9.4배 향상, E2E 구조는 0%에서 수렴 실패). 또한 텍스트 어텐션 붕괴 현상을 zero-shot probe와 masking ablation으로 진단하는 작업을 해보았습니다. 실물 구동을 위해서는 Serbot 2 플랫폼에 Jetson Orin Linux 환경과 ROS2 드라이버를 직접 구성하였고, 제어 지터 완화를 위해 10Hz 비동기 제어와 Jitter Hold 필터링을 적용해 보았습니다.
 >
 > 교수님의 TwinVLA(ICLR 2026) 논문을 읽으면서, 두 VLA 모델을 조합하여 양팔 조작 정책을 효율적으로 구성하는 접근이 흥미로웠습니다. 제가 모바일 도메인에서 경험한 것들이 RLLAB의 실기기 실험 보조나 데이터 수집 파이프라인 구성에 조금이라도 도움이 될 수 있으면 좋겠습니다.
 >
@@ -94,7 +94,7 @@ MoNaVLA: https://minuum.github.io/MoNaVLA/
 
 다가오는 여름방학이나 2학기 중 인턴십 기회가 있을지 여쭤보고 싶습니다.
 
-저는 학부 연구생으로 VLA 모델을 모바일 로봇에 적용하는 MoNaVLA 프로젝트를 진행해 왔습니다. CLIP + BBox + L2-aug 기반 Decomposition Architecture를 구현하여 시뮬레이션 closed-loop 주행 성공률 96.6%를 기록하였으며(E2E 구조는 0%에서 수렴 실패), MLP policy를 68.4% → 75.9% → 77.0%로 단계적으로 개선하였습니다. 이 과정에서 L2-norm과 Hard Negative 데이터 증강이 성능에 미치는 영향을 ablation 실험으로 확인하였습니다.
+저는 학부 연구생으로 VLA 모델을 모바일 로봇에 적용하는 MoNaVLA 프로젝트를 진행해 왔습니다. CLIP + BBox + L2-aug 기반 Decomposition Architecture를 구현하여 시뮬레이션 closed-loop 주행 성공률을 Simple MLP 10.3% → Decomposition v1 66.7% → 최종 96.6%(FPE 0.094m)까지 끌어올렸습니다(E2E 구조는 0%에서 수렴 실패). 이 과정에서 L2-norm과 데이터 증강이 동일 grounding 소스에서 9.4배의 성능 향상을 이끌어낸 핵심 동인임을 ablation 실험으로 확인하였습니다.
 
 실물 구동을 위해서는 Serbot 2 플랫폼에 Jetson Orin Linux 환경을 구성하고 ROS2 드라이버를 연결하였습니다. 실물 구동 시 제어 지터와 응답 지연 문제를 완화하기 위해 10Hz 비동기 제어와 Jitter Hold 필터링을 적용해 보았습니다.
 
@@ -123,7 +123,7 @@ MoNaVLA: https://minuum.github.io/MoNaVLA/
 
 저는 학부 연구생으로 모바일 내비게이션 도메인에서 VLA의 성능 한계와 실패 원인을 파악하는 MoNaVLA 프로젝트를 진행해 왔습니다. 모델의 텍스트 어텐션 붕괴 현상을 zero-shot probe와 masking ablation으로 진단하는 작업을 해보았고, CLIP + BBox + L2-aug 기반 Decomposition Architecture로 시뮬레이션 closed-loop 주행 성공률 96.6%를 기록하였습니다. 실물 구동을 위한 Serbot 2 + Jetson Orin + ROS2 환경 셋업, 제어 지터 완화 작업도 직접 해보았습니다.
 
-최근 발표하신 Failure-Resilient VLA와 AxisGuide(RSS 2026) 논문을 읽으면서, VLA 모델의 실패 상황 대처와 시각적 편향 문제가 실물 로봇 적용에서 얼마나 중요한지 다시 한번 느꼈습니다. VAIL에서 이런 연구를 배우며 성장하고 싶습니다.
+최근 발표하신 AxisGuide(RSS 2026)와 장면 그래프 기반 사전 계획으로 에이전트의 실패 회복력을 높인 연구(AAMAS 2026, Oral)를 읽으면서, VLA 모델의 실패 상황 대처와 시각적 편향 문제가 실물 로봇 적용에서 얼마나 중요한지 다시 한번 느꼈습니다. VAIL에서 이런 연구를 배우며 성장하고 싶습니다.
 
 바쁘신 와중에 읽어주셔서 감사합니다. CV와 성적증명서를 첨부하였습니다.
 
@@ -162,6 +162,6 @@ MoNaVLA: https://minuum.github.io/MoNaVLA/
 ## ✅ 체크리스트 (발송 전 필수 확인)
 - [ ] **교수님 성함 및 소속 확인:** 이영운(연세대), 정우진(고려대), 이정범(고려대), 남창주(서강대) 매칭 및 오탈자 확인
 - [ ] **이메일 주소 확인:** 구글 폼(RLLAB), smartrobot@korea.ac.kr(ISR), jbeomlee@korea.ac.kr(VAIL), cjnam@sogang.ac.kr(AI Robotics)
-- [ ] **수치 팩트 확인:** 96.6% closed-loop(시뮬레이션), MLP 68.4%→75.9%→77.0%, Serbot 2 셋업
+- [ ] **수치 팩트 확인:** 96.6% closed-loop(시뮬레이션, FPE 0.094m), MLP 10.3%→66.7%→96.6%(9.4배 향상), 실로봇 PG2 grounding 0%→51.4%(6세션/512프레임), Serbot 2 셋업
 - [ ] **첨부 파일:** CV(PDF) + 성적증명서(PDF) + (선택) 자기소개서(PDF)
 - [ ] **포트폴리오 링크 작동 확인:** 시크릿 탭에서 로그인 없이 열리는지 확인

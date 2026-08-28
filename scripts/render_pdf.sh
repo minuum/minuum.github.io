@@ -19,7 +19,8 @@ mkdir -p "$PROJECT_ROOT/final_submission/1_연세대_RLLAB" \
          "$PROJECT_ROOT/final_submission/6_성균관대_LAIR" \
          "$PROJECT_ROOT/final_submission/7_KAIST_CLVR" \
          "$PROJECT_ROOT/final_submission/8_서울대_RLLAB" \
-         "$PROJECT_ROOT/final_submission/9_한양대_CGR"
+         "$PROJECT_ROOT/final_submission/9_한양대_CGR" \
+         "$PROJECT_ROOT/final_submission/10_한양대_UNICON"
 
 # Core conversion function
 convert_to_pdf() {
@@ -115,6 +116,14 @@ convert_to_pdf "$PROJECT_ROOT/CV_MinwooLee_EN.md" "$PROJECT_ROOT/final_submissio
 convert_to_pdf "$PROJECT_ROOT/CoverLetter_MinwooLee_CGR.md" "$PROJECT_ROOT/final_submission/9_한양대_CGR/CoverLetter_MinwooLee.pdf"
 if [ -f "$TRANSCRIPT" ]; then
     cp "$TRANSCRIPT" "$PROJECT_ROOT/final_submission/9_한양대_CGR/성적증명서_이민우_영어.pdf"
+fi
+
+# --- 10. 한양대 UNICON ---
+echo "--- Organizing 10_한양대_UNICON ---"
+convert_to_pdf "$PROJECT_ROOT/CV_MinwooLee_EN.md" "$PROJECT_ROOT/final_submission/10_한양대_UNICON/CV_MinwooLee.pdf"
+convert_to_pdf "$PROJECT_ROOT/CoverLetter_MinwooLee_UNICON.md" "$PROJECT_ROOT/final_submission/10_한양대_UNICON/CoverLetter_MinwooLee.pdf"
+if [ -f "$TRANSCRIPT" ]; then
+    cp "$TRANSCRIPT" "$PROJECT_ROOT/final_submission/10_한양대_UNICON/성적증명서_이민우_영어.pdf"
 fi
 
 echo "=== All files successfully organized in 'final_submission' ==="
