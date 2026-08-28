@@ -7,7 +7,7 @@ Portfolio: [minuum-portfolio](https://minuum.notion.site/minuum-portfolio) | Res
 
 ## EDUCATION
 **Kangnam University** — Yongin, South Korea  
-*Bachelor of Science in Artificial Intelligence* (Senior)  
+*Bachelor of Science in Artificial Intelligence* (Senior, 1st Semester)  
 - Expected Graduation: Feb. 2027  
 - GPA: **4.27 / 4.5** (Ranked top of the department)
 
