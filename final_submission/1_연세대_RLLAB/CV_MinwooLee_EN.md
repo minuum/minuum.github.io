@@ -15,7 +15,7 @@ Portfolio: [minuum-portfolio](https://minuum.notion.site/minuum-portfolio) | Res
 
 ## RESEARCH INTERESTS
 - Vision-Language-Action (VLA) Models for Robotics
-- Embodied AI & Mobile Robot Navigation
+- Embodied AI & Mobile Robotics & Autonomous Driving
 - Sim-to-Real Transfer & Physical Latency Mitigation
 - Deep Reinforcement Learning
 
