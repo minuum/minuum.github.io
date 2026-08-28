@@ -1,7 +1,7 @@
 # Minwoo Lee
 *Bachelor Student, Kangnam University — Yongin, South Korea*  
 Email: [minwool0357@gmail.com](mailto:minwool0357@gmail.com) | Phone: +82-10-6757-3689 | GitHub: [github.com/minuum](https://github.com/minuum)  
-Portfolio: [minuum-portfolio](https://minuum.notion.site/minuum-portfolio) | Research Page: [minuum.github.io/MoNaVLA](https://minuum.github.io/MoNaVLA/)
+Portfolio: [minuum-portfolio](https://minuum.notion.site/minuum-portfolio) | Research Page: [minuum.github.io/EdgeGroundVLA](https://minuum.github.io/EdgeGroundVLA/)
 
 ---
 
@@ -44,12 +44,11 @@ Portfolio: [minuum-portfolio](https://minuum.notion.site/minuum-portfolio) | Res
 ## RESEARCH EXPERIENCES
 **Undergraduate Research Assistant** — Advised by Prof. Inyeop Choe, Kangnam University  
 *Project: On-Device Vision-Language-Action Models for Mobile Robotics* | *Sep. 2025 – Present*  
-- **Diagnosis & Analysis:** Diagnosed structural text-attention collapse in the Kosmos-2 VLA backbone through per-layer attention measurement and frozen linear probe classification (val_acc: 96.6%), revealing that post-training had silently destroyed the text pathway regardless of downstream fine-tuning.
-- **Insight Validation:** Confirmed that visual grounding drives navigation decisions via a target object masking ablation that induced 100% action reversal.
-- **Architecture Design:** Designed a two-stage decomposition pipeline integrating PaliGemma2 as a zero-shot visual grounder with the Kosmos-2 vision encoder, bounding box history, and L2 normalization.
-- **Performance:** Improved closed-loop navigation success rate from 10.3% (simple MLP baseline) to 66.7% (Decomposition v1) to **96.6%** (final, FPE: 0.094m) — a 9.4x gain from pipeline refinement alone on an identical grounding source, recovering from near-zero success in the end-to-end Kosmos-2 baseline.
-- **Real-Robot Validation:** Deployed the PaliGemma2 grounder on the physical Serbot 2 platform, raising real-robot grounding accuracy from 0% to 51.4% across 6 sessions (512 frames) by fixing camera-decoding bugs and applying bounding-box noise filtering; full closed-loop control testing is the next step.
-- **Award:** Won the **Silver Prize at the 2026-1 Kangnam University Capstone Design Competition**.
+- **EdgeGround-VLA Architecture (1st Author):** Proposed and implemented EdgeGround-VLA, an on-device navigation model fusing heterogeneous vision grounding encoders (OWLv2 + Kosmos-2) with a lightweight 3-DoF action head (0.866M parameters).  
+- **Parameter Efficiency & On-Device Deployment:** Engineered a lightweight policy training only 1.128M parameters out of 459M total parameters, achieving 95.0% goal-reaching success rate in 100 real-robot trials on NVIDIA Jetson Orin NX without cloud connectivity or pre-built infrastructure. (*Submitted & Under Review at JKSCI, KCI-registered journal*)  
+- **VLA Backbone Analysis & Pipeline Optimization:** Conducted per-layer attention measurement and frozen linear probe classification to analyze VLA backbone representations, developing a 2-stage decomposition pipeline that improved closed-loop navigation performance.  
+- **Real-Robot Control Stack:** Configured Jetson Orin Linux and ROS2 driver nodes on the 3-axis omnidirectional Serbot 2 mobile platform; built a 10Hz asynchronous action re-issuance and Jitter Hold filtering stack to maintain continuous control under edge inference latency (~1.02s).  
+- **Award:** Won the **Silver Prize at the 2026-1 Kangnam University Capstone Design Competition** during the VLA research project.
 
 ---
 
