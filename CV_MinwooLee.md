@@ -21,7 +21,14 @@ Portfolio: [minuum-portfolio](https://minuum.notion.site/minuum-portfolio) | Res
 
 ---
 
-## PUBLICATIONS (DOMESTIC)
+## PUBLICATIONS & MANUSCRIPTS
+- **EdgeGround-VLA: On-Device Goal-Directed Navigation via Dual Frozen Grounding Encoders**  
+  *Journal of The Korea Society of Computer and Information (JKSCI)*, KCI Registered, **Under Review (2026)**.  
+  **Minwoo Lee** (1st Author / Project Lead), et al.  
+  - Fuses dual frozen grounding encoders (OWLv2 + Kosmos-2) with a 0.866M-parameter action head (1.128M total trained parameters).  
+  - Achieves **95.0% real-robot goal-reaching success rate** fully on-device on Jetson Orin NX.  
+  - Project Page: [minuum.github.io/EdgeGroundVLA](https://minuum.github.io/EdgeGroundVLA/)
+
 - **Designing Conversational AI Services Using RAG-Based Loneliness Analysis for Koreans**  
   *Journal of the Korea Convergence Society (JCCT)*, KCI Registered, 2024.  
   **Minwoo Lee** (2nd Author), et al.
